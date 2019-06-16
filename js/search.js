@@ -13,7 +13,9 @@ document.onkeypress = (e) => {
     search.classList.add('active');
 
   input.scrollIntoView();
-  input.focus();
+  setTimeout(function() {
+    input.focus();
+  }, 300);
 
   $('#search .close').onclick = () =>
     search.classList.remove('active');
