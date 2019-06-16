@@ -161,9 +161,9 @@ body {
     font-size: 16px !important;
 }
 
-#tabs i[sunny] { color: var(--color5); }
+#tabs i[sunny] { color: var(--color1); }
 
-#tabs i[cloudy] { color: var(--color5); }
+#tabs i[cloudy] { color: var(--color1); }
 
 #search {
     position: fixed;
@@ -177,7 +177,7 @@ body {
     opacity: 0;
     visibility: hidden;
     top: -100%;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #search.active {
@@ -188,7 +188,7 @@ body {
 
 #search div {
     position: relative;
-    width: 80%;
+    width: 60%;
 }
 
 #search input {
@@ -221,15 +221,16 @@ body {
     right: 0;
     cursor: pointer;
     top: 15px;
+    filter: opacity(.5)
 }
 
 #search .close:hover {
-    filter: opacity(.5);
+    filter: opacity(1);
 }
 
 .search-engines {
     list-style: none;
-    color: #7d7d7d;
+    color: var(--foreground);
     display: block;
     display: flex;
     top: 50px;

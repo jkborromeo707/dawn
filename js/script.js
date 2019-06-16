@@ -9,7 +9,7 @@ function engines () {
     n: ['https://nyaa.si/?f=0&c=0_0&q=', 'Nyaa'],
     i: ['https://www.google.com/search?tbm=isch&q=', 'Google Images'],
     b: ['https://gelbooru.com/index.php?page=post&s=list&tags=', 'Gelbooru'],
-    p: ['http://www.pixiv.net/search.php?s_mode=s_tag&word={Q}', 'Pixiv'],
+    p: ['http://www.pixiv.net/search.php?s_mode=s_tag&word=', 'Pixiv'],
     w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
   };
 }
