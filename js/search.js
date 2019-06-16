@@ -39,7 +39,9 @@ document.onkeypress = (e) => {
         (engine = engines[prefix.substr(1)][0], str = 3);
 
       window.location = engine + args.join(' ').substr(str).toString().replace(/\s+/m, '%20');
-    } else if (e.keyCode == 27)
+    } else if (e.keyCode == 27) {
       search.classList.remove('active');
+      input.value = '';
+    }
   };
 };

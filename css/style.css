@@ -202,11 +202,11 @@ body {
     background: none;
     font: 500 22px 'Roboto', sans-serif;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--foreground);
 }
 
 #search input:focus {
-    box-shadow: inset 0 -2px #fff;
+    box-shadow: inset 0 -2px var(--foreground);
 }
 
 #search input::selection {
