@@ -25,7 +25,7 @@ class Weather {
     });
 
     $('.weather p[weather]').innerHTML = `<i class="material-icons" ${color}>${icon}</i>`;
-    $('.weather p[temperature]').innerHTML = `${temperature}ºC`;
+    $('.weather p[temperature]').innerHTML = `${temperature}º`;
   }
 
   fetchWeather(callback) {

@@ -4,9 +4,12 @@ const $  = (e) => document.querySelector(e),
 function engines () {
   return {
     g: ['https://google.com/search?q=', 'Google'],
-    i: ['https://ixquick.com/do/search?q=', 'Ixquick'],
-    d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
     y: ['https://youtube.com/results?search_query=', 'Youtube'],
+    j: ['http://jisho.org/search/', 'Jisho'],
+    n: ['https://nyaa.si/?f=0&c=0_0&q=', 'Nyaa'],
+    i: ['https://www.google.com/search?tbm=isch&q=', 'Google Images'],
+    b: ['https://gelbooru.com/index.php?page=post&s=list&tags=', 'Gelbooru'],
+    p: ['http://www.pixiv.net/search.php?s_mode=s_tag&word={Q}', 'Pixiv'],
     w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
   };
 }
@@ -16,25 +19,5 @@ const { parse, stringify } = JSON;
 const nodes = (elem) =>
       Array.prototype.slice.call($(elem).children);
 
-var place = localStorage.place || 'new york';
-
-$('.weather .edit').onclick = () =>
-  $('.weather-config').classList.add('show');
-
-$('.weather-config input').onkeyup = (e) => {
-  if (e.key == 'Enter') {
-    localStorage.place = e.target.value;
-    window.location.reload();
-  }
-  else if (e.keyCode == 27)
-    e.target.parentNode.classList.remove('show');
-};
-
-(function () {
-  if (localStorage.getItem("todo") === null)
-    localStorage.todo = '[]';
-})();
-
-new Todo().display;
-new Weather(place).getWeather;
-new Powerline();
+new Weather('sydney').getWeather;
+new DateTime().setDateTime();

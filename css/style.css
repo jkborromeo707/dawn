@@ -133,24 +133,32 @@ body {
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 2em auto;
     color: var(--foreground);
     font-size: 12px;
 }
 
+#tabs .date {
+    margin-left: 2em;
+}
+
+#tabs .time {
+    margin-right: 2em;
+}
+
 #tabs .weather p[temperature] {
-    margin: 0 1em 0 1em;
+    margin: 0 0.5em 0 0.5em;
     color: var(--foreground);
 }
 
-#tabs .weather p[precipitation] {
-    margin: 0 1em 0 1em;
-    color: var(--foreground);
+#tabs span {
+    color: var(--color5);
 }
 
 #tabs i {
-    font-size: 21px !important;
+    margin-top: 0.3em;
+    font-size: 16px !important;
 }
 
 #tabs i[sunny] { color: var(--color5); }
