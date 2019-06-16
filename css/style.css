@@ -42,11 +42,20 @@ body {
     background: none;
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20%;
+    height: 100%;
+    width: 100%;
+}
+
 #panels {
     border-radius: 5px 0 0 5px;
     width: 700px;
     height: 350px;
-    margin: 10% auto auto auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     background: var(--bg2);
 }
@@ -110,7 +119,7 @@ body {
 
 #tabs {
     width: 600px;
-    height: 32px;
+    height: 30px;
     background: var(--bg2);
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
