@@ -5,9 +5,6 @@ var search  = $('#search'),
 for (var key in engines)
   $('.search-engines').innerHTML += `<li><p title="${engines[key][1]}">-${key}</p></li>`;
 
-$('#search .close').onclick = () =>
-  search.classList.remove('active');
-
 document.onkeypress = (e) => {
   if (e.key == 's')
     search.classList.add('active');
@@ -16,9 +13,6 @@ document.onkeypress = (e) => {
   setTimeout(function() {
     input.focus();
   }, 300);
-
-  $('#search .close').onclick = () =>
-    search.classList.remove('active');
 
   search.onkeyup = (e) => {
     let args   = e.target.value.split(' '),
@@ -39,7 +33,7 @@ document.onkeypress = (e) => {
         (engine = engines[prefix.substr(1)][0], str = 3);
 
       window.location = engine + args.join(' ').substr(str).toString().replace(/\s+/m, '%20');
-    } else if (e.keyCode == 27) {
+    } else if (e.key == 'Escape') {
       search.classList.remove('active');
       input.value = '';
     }
