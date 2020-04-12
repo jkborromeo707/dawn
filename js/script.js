@@ -11,6 +11,7 @@ function engines () {
     i: ['https://www.google.com/search?tbm=isch&q=', 'Google Images'],
     b: ['https://gelbooru.com/index.php?page=post&s=list&tags=', 'Gelbooru'],
     p: ['http://www.pixiv.net/search.php?s_mode=s_tag&word=', 'Pixiv'],
+    s: ['https://sukebei.nyaa.si/?f=0&c=0_0&q=', 'Sukebei.Nyaa'],
     v: ['https://vndb.org/v/all?sq=', 'VNDB'],
     w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
   };
