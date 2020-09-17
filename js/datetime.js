@@ -6,9 +6,9 @@ class DateTime {
     var hour = String(today.getHours()).padStart(2, "0")
     var minute = String(today.getMinutes()).padStart(2, "0")
 
-    $('.date p[date]').innerHTML = month + "月" + day + "日";
-    $('.time p[time]').innerHTML = hour + "時" + minute + "分";
-    
+    $('.date p[date]').innerHTML = month + "/" + day;
+    $('.time p[time]').innerHTML = hour + ":" + minute;
+
     setInterval(this.setDateTime, 60000);
   }
 }
